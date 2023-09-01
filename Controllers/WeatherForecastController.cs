@@ -41,7 +41,7 @@ public class WeatherForecastController : ControllerBase
             using (var smtpc = new MailKit.Net.Smtp.SmtpClient())
             {
                 // smtpc.Connect("smtp.gmail.com", 465, SecureSocketOptions.StartTls);
-                smtpc.Connect("smtp.gmail.com", 465, true);
+                smtpc.Connect("smtp.gmail.com", 465, false);
                 
 
                 // Note: only needed if the SMTP server requires authentication
